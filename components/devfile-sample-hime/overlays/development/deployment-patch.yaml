@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hime
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0045-tenant/ci10t-776-0045-app/devfile-sample-hime@sha256:0b66e0287ef45ba8b848b43ae4c4aafd5b3cd0d2afa58ff45716906fd627e9d2
+        name: my-nodejs
+        resources: {}
+status: {}
